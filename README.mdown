@@ -1,0 +1,13 @@
+# Theme for Folding Text
+
+This theme is based loosely off of [the Gloom theme](https://github.com/daylerees/colour-schemes#gloom) for TextMate and Sublime Text. It is optimized for heavy use of the `.todo` mode, with lots of useful tags.
+
+![Screenshot of general syntax](https://raw.github.com/duien/folding-text-theme/master/screenshots/general%20syntax.png)
+
+![Screenshot of todo mode](https://raw.github.com/duien/folding-text-theme/master/screenshots/tasks.png)
+
+![Screenshot of other tags](https://raw.github.com/duien/folding-text-theme/master/screenshots/other%20tags.png)
+
+## Installation
+
+In order to install this theme (as of FoldingText v1.2.2), the `User.fttheme` folder needs to be placed into `~/Library/Containers/com.foldingtext.FoldingText/Data/Library/Application Support/FoldingText/Themes/`.

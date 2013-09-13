@@ -1,0 +1,197 @@
+/*
+ * Copyright (c) 2011-2012 Hog Bay Software. All rights reserved.
+ */
+
+.syntax, .lead.syntax, .trail.syntax, .mode {
+    color: rgb(78, 109, 100);
+}
+.collapseSpanningSyntax .code.currentSyntaxBlock.syntax,
+.collapseSpanningSyntax .inlineLink.currentSyntaxBlock.syntax,
+.collapseSpanningSyntax .referenceLink.currentSyntaxBlock.syntax,
+.collapseSpanningSyntax .strong.currentSyntaxBlock.syntax,
+.collapseSpanningSyntax .emphasis.currentSyntaxBlock.syntax {
+  font-family:inherit;
+  color: rgb(78, 109, 100);
+}
+.unordered .lead.syntax {
+  color: rgb(78, 109, 100);
+}
+.ordered .lead.syntax {
+  color: rgb(78, 109, 100);
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  background: rgb(44, 50, 43);
+}
+body {
+  font-family: 'SauceCodePowerline-Medium', monospace;
+  background: rgb(44, 50, 43);
+  color: rgb(223, 239, 234);
+}
+.tabs {
+  font-family:HalfWidthSpace;
+}
+.code, .codeblock {
+  font-family: 'SauceCodePowerline-Medium', monospace;
+  background: rgb(22, 26, 31);
+}
+.code, .codeblock > .content > .text {
+}
+.blockquote {
+  font-style:oblique;
+}
+.blockquote .emphasis {
+  font-style: normal;
+}
+.headerLeadSyntaxText:hover {
+  text-decoration:underline;
+  cursor: pointer;
+}
+.htmltag {
+  color: rgb(35, 150, 149);
+}
+.htmltag-attributevalue {
+  color: rgb(143, 190, 0);
+}
+.linkText, .smartLink {
+  color: rgb(0, 167, 198);
+}
+@font-face {
+  font-family: CourierFoldEllipse;
+  src: url('./fonts/CourierFoldEllipse.ttf');
+}
+.foldafter .content:after {
+  font-family: CourierFoldEllipse, 'SauceCodePowerline-Medium';
+  font-style:normal;
+  font-weight:normal;
+  content:" …";
+}
+.editorTopFold {
+  color: rgb(223, 239, 234);
+  background: rgb(189, 54, 19);
+}
+
+/* TODO MODE */
+
+@font-face {
+  font-family: CourierBulletDone;
+  src: url('./fonts/CourierBulletDone.ttf');
+}
+@font-face {
+  font-family: CourierBulletNotDone;
+  src: url('./fonts/CourierBulletNotDone.ttf');
+}
+.todoMode {
+  color: rgb(78, 109, 100);
+}
+.unordered.todoMode {
+  color: rgb(223, 239, 234);
+}
+.todoMode.heading {
+  color: rgb(223, 239, 234);
+}
+.unordered.todoMode .lead {
+  font-family:CourierBulletNotDone, 'SauceCodePowerline-Medium';
+  color: rgb(223, 239, 234);
+}
+div[done].unordered.todoMode .lead,
+div[done].unordered.todoMode span[class~=text],
+div[done].unordered.todoMode span.tag.syntax,
+div[done].unordered.todoMode span.tag.tagname {
+  color: rgb(60, 77, 62) !important;
+  background: rgb(44, 50, 43) !important;
+}
+
+div[done].unordered.todoMode .lead {
+  font-family:CourierBulletDone, 'SauceCodePowerline-Medium';
+}
+
+/* TAGS */
+
+div span.tag.syntax,
+div span.tag.tagname {
+  color: rgb(78, 109, 100);
+}
+
+/* FANCY TAGS */
+
+div[low].unordered.todoMode .lead,
+div[low] span[class~=text] {
+  color: rgb(19, 151, 185);
+}
+div[optional].unordered.todoMode .lead,
+div[optional] span[class~=text] {
+  color: rgb(78, 109, 100);
+}
+div[mid].unordered.todoMode .lead,
+div[mid] span[class~=text] {
+  color: rgb(229, 219, 116);
+}
+
+div[high].unordered.todoMode .lead,
+div[high] span[class~=text] {
+  color: rgb(179, 228, 59);
+}
+
+div[today].unordered.todoMode .lead{
+  color: rgb(211, 54, 130);
+}
+div[today].unordered.todoMode span[class~=text] {
+  background: rgb(143, 4, 95);
+}
+
+div[overdue].unordered.todoMode .lead,
+div[overdue].unordered.todoMode span[class~=text] {
+  color: rgb(254, 92, 56);
+}
+div[overdue][n].unordered.todoMode span[class~=text] {
+  color: rgb(22, 26, 31);;
+}
+
+div[hl] span[class~=text] {
+  background: rgb(229, 219, 116);
+  color: rgb(22, 26, 31);
+}
+
+
+div[x] span[class~=text] {
+  background: rgb(51, 64, 52);
+  color: rgb(223, 239, 234);
+}
+div[x].unordered.todoMode span[class~=text] {
+  color: rgb(223, 239, 234); 
+}
+div[x].todoMode span[class~=text] {
+  color: rgb(22, 26, 31); 
+}
+
+div[y] span[class~=text] {
+  background: rgb(60, 77, 62);
+  color: rgb(223, 239, 234);
+}
+div[y].unordered.todoMode span[class~=text] {
+  color: rgb(223, 239, 234); 
+}
+div[y].todoMode span[class~=text] {
+  color: rgb(22, 26, 31); 
+}
+
+div[z] span[class~=text] {
+  background: rgb(78, 109, 100);
+  color: rgb(223, 239, 234);
+}
+div[z].unordered.todoMode span[class~=text] {
+  color: rgb(223, 239, 234); 
+}
+div[z].todoMode span[class~=text] {
+  color: rgb(22, 26, 31); 
+}
+
+div[p] span[class~=text] {
+  background: rgb(151, 198, 0);
+  color: rgb(22, 26, 31);
+}
+div[n] span[class~=text] {
+  background: rgb(254, 92, 56);
+  color: rgb(22, 26, 31);
+}
