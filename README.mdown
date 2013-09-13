@@ -11,3 +11,7 @@ This theme is based loosely off of [the Gloom theme](https://github.com/dayleree
 ## Installation
 
 In order to install this theme (as of FoldingText v1.2.2), the `User.fttheme` folder needs to be placed into `~/Library/Containers/com.foldingtext.FoldingText/Data/Library/Application Support/FoldingText/Themes/`.
+
+## Requirements
+
+This theme uses the Powerline-optimized version of Adobe's free Source Code Pro font. It can be obtained [from the powerline-fonts repository](https://github.com/Lokaltog/powerline-fonts/tree/master/SourceCodePro). If you wish to use another font, just replace any instances of `'SauceCodePowerline-Medium'` in the `style.css` file with the name of the font you wish to use.
